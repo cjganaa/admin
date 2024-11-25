@@ -1,0 +1,63 @@
+.card{
+    width: 336px;
+    height: 192px;
+    background-color: white;
+    background-image: url('Shape.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    position: relative;
+}
+body{
+    background-color: burlywood;
+}
+.firstName{
+    position: absolute;
+    font-weight: bold;
+    color: #0071BC;
+    font-size: 14px;
+    top: 25px;
+    left: 27px;
+}
+.lastName{
+    display: inline;
+    font-weight: bold;
+    color: #F7931E;
+    font-size: 14px;
+    top: 25px;
+    left: 27px;
+}
+.contact{
+    position: absolute;
+    top: 116px;
+    left: 26px;
+    font-size: 8px;
+}
+.companyLogo{
+    position: absolute;
+    top: 25px;
+    left: 251px;
+    width: 30px;
+    height: 30px;
+    background-image: url('./Logo1.svg');
+}
+.companyName{
+    position: absolute;
+    top: 60px;
+    left: 220px;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+.qr{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 246px;
+    top: 125px;
+    background-image: url('./QRcode.svg');
+}
