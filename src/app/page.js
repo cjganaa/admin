@@ -6,7 +6,7 @@ import { FiMail } from "react-icons/fi";
 import { GrLocation } from "react-icons/gr";
 
 export default function MyApp() {
-  let info = [
+  let users = [
     {"id":1,"firstName":"Marian","lastName":"Dixsee","email":"mdixsee0@nba.com","companyName":"Blogtags","phoneNumber":"412-530-2249","address":"62 Meadow Ridge Plaza"},
     {"id":2,"firstName":"Coleman","lastName":"Oxbie","email":"coxbie1@oaic.gov.au","companyName":"Fatz","phoneNumber":"592-295-2012","address":"18 Macpherson Place"},
     {"id":3,"firstName":"Allx","lastName":"Tomasian","email":"atomasian2@cafepress.com","companyName":"Abata","phoneNumber":"741-828-1962","address":"42040 Ridgeway Trail"},
@@ -17,8 +17,8 @@ export default function MyApp() {
     {"id":8,"firstName":"Jourdain","lastName":"Leban","email":"jleban7@is.gd","companyName":"Layo","phoneNumber":"124-860-5889","address":"77 Fair Oaks Court"},
     {"id":9,"firstName":"Christy","lastName":"Van Der Straaten","email":"cvanderstraaten8@dailymail.co.uk","companyName":"Linktype","phoneNumber":"460-169-0338","address":"94749 Mendota Circle"},
     {"id":10,"firstName":"Jehanna","lastName":"Cleobury","email":"jcleobury9@huffingtonpost.com","companyName":"Flashpoint","phoneNumber":"396-811-4137","address":"3759 Oak Valley Park"}];
-  const cards = info.map(info =>
-    <Card key={info.id} firstName = {info.firstName} lastName={info.lastName} email={info.email} companyName={info.companyName} phoneNumber={info.phoneNumber} address={info.address}/>
+  const cards = users.map(user =>
+    <Card key={user.id} firstName = {user.firstName} lastName={user.lastName} email={user.email} companyName={user.companyName} phoneNumber={user.phoneNumber} address={user.address}/>
   );
   return (
     <div>
@@ -34,9 +34,9 @@ function Card({firstName, lastName,email,companyName,phoneNumber,address}) {
         {firstName} <div className='lastName'>{lastName}</div>
       </div>
       <div className='contact'>
-        <FiPhone style={{display:'inline'}}/> {phoneNumber}<br></br>
-        <FiMail style={{display:'inline'}}/> {email}<br></br>
-        <GrLocation style={{display:'inline'}}/> {address}<br></br>
+        <FiPhone className='icon'/> {phoneNumber}<br></br>
+        <FiMail className='icon'/> {email}<br></br>
+        <GrLocation className='icon'/> {address}<br></br>
       </div>
       <div className='companyLogo'></div>
       <div className='companyName'>

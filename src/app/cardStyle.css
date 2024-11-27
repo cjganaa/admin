@@ -62,3 +62,6 @@ body{
     top: 125px;
     background-image: url('./QRcode.svg');
 }
+.icon{
+    display: inline;
+}
